@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qué Hacemos — Media Vuelta</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <a href="../" class="navbar__logo">
+      <img src="../assets/logo.svg" alt="Media Vuelta">
+      <div class="navbar__logo-text">
+        <span class="navbar__brand">MEDIA VUELTA</span>
+        <span class="navbar__tagline">Laboratorio Creativo</span>
+      </div>
+    </a>
+    <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="navbar__links">
+        <li><a href="../quienes-somos/">Quiénes somos</a></li>
+        <li><a href="./" class="active">Qué hacemos</a></li>
+        <li><a href="../por-que-elegirnos/">Por qué elegirnos</a></li>
+        <li><a href="../proyectos/">Proyectos</a></li>
+        <li><a href="../contacto/">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="qh-hero">
+      <div class="qh-hero__content">
+        <h1 class="qh-hero__titulo">
+          <span class="qs-badge"><img src="assets/TEXTO_1.svg" alt="" aria-hidden="true" class="qs-badge__bg"><span class="qs-badge__text">CREAMOS MARCAS</span></span> QUE<br>
+          SUENAN FUERTE SIN GRITAR
+        </h1>
+        <p class="qh-hero__subtitulo">Hacemos branding, diseño, audiovisual, web, ads digitales,<br>soluciones tecnológicas e integración de IA en los procesos de<br>las empresas. Pero lo importante no es el formato, sino la idea.</p>
+        <p class="qh-hero__acento">Cuando el foco está claro, todo lo demás fluye.</p>
+        <div class="qh-hero__ilustracion">
+          <img src="assets/1.svg" alt="Ilustración Media Vuelta">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATEMENT (FONDO_1.svg en flujo normal) ===== -->
+    <section class="qh-statement">
+      <img src="assets/FONDO_1.svg" alt="" aria-hidden="true" class="qh-statement__fondo">
+      <div class="qh-statement__content">
+        <h2 class="qh-statement__titulo">
+          <span class="qs-badge"><img src="assets/TEXTO_2.svg" alt="" aria-hidden="true" class="qs-badge__bg"><span class="qs-badge__text">TODAVÍA CREEMOS</span></span> EN EL PODER DE<br>
+          <span class="qs-badge"><img src="assets/TEXTO_3.svg" alt="" aria-hidden="true" class="qs-badge__bg"><span class="qs-badge__text">LAS IDEAS</span></span> PARA SOLUCIONAR PROBLEMAS
+        </h2>
+      </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section class="qh-servicios">
+      <div class="qh-servicios__content">
+        <h2 class="qh-servicios__titulo">
+          <span class="qs-badge"><img src="assets/TEXTO_4.svg" alt="" aria-hidden="true" class="qs-badge__bg"><span class="qs-badge__text">QUÉ HACEMOS</span></span>
+        </h2>
+      </div>
+
+      <div class="carousel" id="carrusel-qh">
+        <div class="carousel__viewport">
+          <div class="carousel__track">
+            <div class="servicio">
+              <h3 class="servicio__titulo">LOREM IPSUM</h3>
+              <div class="servicio__img"></div>
+              <p class="servicio__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <div class="servicio__footer">
+                <a href="../contacto/" class="servicio__link">Ver más</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <h3 class="servicio__titulo">LOREM IPSUM</h3>
+              <div class="servicio__img"></div>
+              <p class="servicio__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <div class="servicio__footer">
+                <a href="../contacto/" class="servicio__link">Ver más</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <h3 class="servicio__titulo">LOREM IPSUM</h3>
+              <div class="servicio__img"></div>
+              <p class="servicio__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <div class="servicio__footer">
+                <a href="../contacto/" class="servicio__link">Ver más</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <h3 class="servicio__titulo">LOREM IPSUM</h3>
+              <div class="servicio__img"></div>
+              <p class="servicio__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <div class="servicio__footer">
+                <a href="../contacto/" class="servicio__link">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none">
+            <path d="M19 12H5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5 12L10 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5 12L10 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M19 12L14 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M19 12L14 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__logo">
+      <img src="../assets/logo.svg" alt="Media Vuelta">
+      <div>
+        <span class="footer__brand">MEDIA VUELTA</span>
+        <span class="footer__tagline">Laboratorio Creativo</span>
+      </div>
+    </div>
+    <div class="footer__contacto">
+      <a href="../contacto/" class="footer__contacto-btn">
+        <span class="footer__contacto-texto">CONTACTO</span>
+      </a>
+      <a href="mailto:somos@mediavuelta.cl" class="footer__email">somos@mediavuelta.cl</a>
+    </div>
+    <nav class="footer__nav">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../quienes-somos/">Quiénes somos</a></li>
+        <li><a href="./">Qué hacemos</a></li>
+        <li><a href="../por-que-elegirnos/">Por Qué Elegirnos</a></li>
+        <li><a href="../proyectos/">Proyectos</a></li>
+        <li><a href="../contacto/">Contacto</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Vuelta — Laboratorio Creativo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <a href="#inicio" class="navbar__logo">
+      <img src="assets/logo.svg" alt="Media Vuelta">
+      <div class="navbar__logo-text">
+        <span class="navbar__brand">MEDIA VUELTA</span>
+        <span class="navbar__tagline">Laboratorio Creativo</span>
+      </div>
+    </a>
+
+    <button class="navbar__hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav>
+      <ul class="navbar__links">
+        <li><a href="quienes-somos/">Quiénes somos</a></li>
+        <li><a href="que-hacemos/">Qué hacemos</a></li>
+        <li><a href="por-que-elegirnos/">Por qué elegirnos</a></li>
+        <li><a href="proyectos/">Proyectos</a></li>
+        <li><a href="contacto/">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <img src="assets/FONDO_1.svg" alt="" aria-hidden="true" class="hero__fondo">
+
+    <div class="hero__content">
+      <div class="hero__texto">
+        <h1 class="hero__titulo">
+          TODAVÍA <span class="hero__creemos"><img src="assets/1.svg" alt="" aria-hidden="true" class="hero__creemos-bg">CREEMOS</span><br>
+          EN LAS IDEAS
+        </h1>
+        <p class="hero__subtitulo">Somos una agencia creativa para marcas que se atreven a incomodar</p>
+      </div>
+      <div class="hero__ilustracion">
+        <img src="assets/ilustracion-1.svg" alt="Ilustración Media Vuelta">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUIÉNES SOMOS ===== -->
+  <section class="quienes" id="quienes-somos">
+    <div class="quienes__content">
+      <div class="quienes__texto">
+        <p>La creatividad sigue siendo nuestro lenguaje, pero hoy la usamos para<br>construir marcas más honestas, más humanas y más valientes.</p>
+        <p>Creemos que la publicidad puede ser distinta: más consciente y auténtica.</p>
+      </div>
+
+      <div class="quienes__acento">
+        <p class="quienes__acento-texto">Invitamos a las marcas a darle una vuelta al juego.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATEMENT ===== -->
+  <section class="statement" id="por-que-elegirnos">
+    <div class="statement__content">
+      <h2 class="statement__titulo">
+        NO SOMOS PARA TODOS, SOMOS PARA LAS<br>
+        MARCAS QUE TAMBIÉN <span class="statement__badge"><img src="assets/2.svg" alt="" aria-hidden="true" class="statement__badge-bg"><span class="statement__badge-text">CREEN EN LAS IDEAS</span></span>
+      </h2>
+    </div>
+  </section>
+
+  <!-- ===== QUÉ HACEMOS ===== -->
+  <section class="hacemos" id="que-hacemos">
+    <div class="hacemos__bg">
+      <img src="assets/FONDO_2.svg" alt="" aria-hidden="true">
+    </div>
+
+    <div class="hacemos__content">
+      <h2 class="hacemos__titulo">
+        <span class="hacemos__que">QUÉ</span>
+        <span class="hacemos__hacemos-text">HACEMOS</span>
+      </h2>
+
+      <div class="carousel" id="carrusel-hacemos">
+        <div class="carousel__viewport">
+          <div class="carousel__track hacemos__servicios">
+            <div class="servicio">
+              <h3 class="servicio__titulo">LOREM IPSUM</h3>
+              <div class="servicio__img"></div>
+              <p class="servicio__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <div class="servicio__footer">
+                <a href="#contacto" class="servicio__link">Ver más</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <h3 class="servicio__titulo">LOREM IPSUM</h3>
+              <div class="servicio__img"></div>
+              <p class="servicio__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <div class="servicio__footer">
+                <a href="#contacto" class="servicio__link">Ver más</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <h3 class="servicio__titulo">LOREM IPSUM</h3>
+              <div class="servicio__img"></div>
+              <p class="servicio__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <div class="servicio__footer">
+                <a href="#contacto" class="servicio__link">Ver más</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <h3 class="servicio__titulo">LOREM IPSUM</h3>
+              <div class="servicio__img"></div>
+              <p class="servicio__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <div class="servicio__footer">
+                <a href="#contacto" class="servicio__link">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none">
+            <path d="M19 12H5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5 12L10 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5 12L10 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M19 12L14 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M19 12L14 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS ===== -->
+  <section class="proyectos" id="proyectos">
+    <div class="proyectos__bg">
+      <img src="assets/FONDO_3.svg" alt="" aria-hidden="true">
+    </div>
+
+    <div class="proyectos__content">
+      <h2 class="proyectos__titulo">
+        <span class="proyectos__titulo--nuestros">NUESTROS</span>
+        <span class="proyectos__titulo--proyectos">PROYECTOS</span>
+      </h2>
+
+      <div class="carousel" id="carrusel-proyectos">
+        <div class="carousel__viewport">
+          <div class="carousel__track proyectos__track">
+            <div class="proyecto__item"></div>
+            <div class="proyecto__item"></div>
+            <div class="proyecto__item"></div>
+            <div class="proyecto__item"></div>
+            <div class="proyecto__item"></div>
+            <div class="proyecto__item"></div>
+          </div>
+        </div>
+        <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none">
+            <path d="M19 12H5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5 12L10 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5 12L10 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M19 12L14 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M19 12L14 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contacto" id="contacto">
+    <div class="contacto__bg">
+      <img src="assets/FONDO_4.svg" alt="" aria-hidden="true">
+    </div>
+
+    <div class="contacto__content">
+      <div class="contacto__header">
+        <h2 class="contacto__titulo">
+          <span class="contacto__titulo-texto">CONTÁCTANOS</span>
+        </h2>
+        <p class="contacto__intro">
+          Escríbenos a <a href="https://wa.me/56900000000" class="contacto__wa"><span class="contacto__wa-inner">WhatsApp<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span></a> o mándanos un correo
+        </p>
+      </div>
+
+      <div class="contacto__body">
+        <div class="contacto__ilustracion">
+          <img src="assets/ilustracion-2.svg" alt="Ilustración contacto">
+        </div>
+
+        <div class="contacto__formulario">
+          <form class="contacto__form" action="#" method="post">
+            <div class="form__grid">
+              <div class="form__campo">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
+              <div class="form__campo">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+              </div>
+              <div class="form__campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+              </div>
+              <div class="form__campo">
+                <label for="mensaje">¿Qué andas buscando?</label>
+                <textarea id="mensaje" name="mensaje" rows="3" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="form__btn">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__logo">
+      <img src="assets/logo.svg" alt="Media Vuelta">
+      <div>
+        <span class="footer__brand">MEDIA VUELTA</span>
+        <span class="footer__tagline">Laboratorio Creativo</span>
+      </div>
+    </div>
+
+    <div class="footer__contacto">
+      <a href="contacto/" class="footer__contacto-btn">
+        <span class="footer__contacto-texto">CONTACTO</span>
+      </a>
+      <a href="mailto:somos@mediavuelta.cl" class="footer__email">somos@mediavuelta.cl</a>
+    </div>
+
+    <nav class="footer__nav">
+      <ul>
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="quienes-somos/">Quiénes somos</a></li>
+        <li><a href="que-hacemos/">Qué hacemos</a></li>
+        <li><a href="por-que-elegirnos/">Por Qué Elegirnos</a></li>
+        <li><a href="proyectos/">Proyectos</a></li>
+        <li><a href="contacto/">Contacto</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
