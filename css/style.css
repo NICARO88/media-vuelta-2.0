@@ -1314,6 +1314,7 @@ ul {
   .hero__ilustracion {
     width: 70%;
     margin: 0 auto;
+    transform: none;
   }
 
   .quienes__content,
@@ -1322,8 +1323,24 @@ ul {
     padding: 64px 20px;
   }
 
+  .quienes__content {
+    margin-bottom: 0;
+  }
+
   .statement {
     padding: 64px 20px;
+  }
+
+  .statement__titulo {
+    white-space: normal;
+  }
+
+  .hacemos__titulo {
+    width: 80%;
+  }
+
+  .proyectos__titulo {
+    width: 90%;
   }
 
   /* 1 item en carruseles en mobile */
@@ -1335,11 +1352,25 @@ ul {
     padding: 64px 20px;
   }
 
+  .contacto__body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto__ilustracion {
+    display: none;
+  }
+
   .form__grid {
     grid-template-columns: 1fr;
   }
 
+  .form__btn {
+    align-self: center;
+  }
+
   .footer {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
@@ -1418,6 +1449,8 @@ ul {
 
   .quienes__texto p {
     white-space: normal;
+    font-size: clamp(16px, 4.5vw, 24px);
+    text-align: center;
   }
 
   /* ===== QUIÉNES SOMOS ===== */
@@ -1472,13 +1505,15 @@ ul {
 
   .qs-equipo__header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
   }
 
   .qs-equipo__alien {
     width: clamp(180px, 60%, 300px);
     margin-top: -120px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .qs-equipo__titulo {
@@ -1499,6 +1534,14 @@ ul {
   .qs-miembro {
     max-width: 360px;
     margin: 0 auto;
+  }
+
+  .qs-miembro__nombre {
+    white-space: normal;
+  }
+
+  .qs-miembro__desc {
+    text-align: center;
   }
 
   /* ===== QUÉ HACEMOS ===== */
@@ -1554,6 +1597,31 @@ ul {
     height: clamp(60px, 14vw, 110px);
   }
 
+  .pe-valor__titulo-text {
+    white-space: normal;
+  }
+
+  .pe-valor__desc {
+    text-align: center;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  .pe-valor:first-child .pe-valor__desc,
+  .pe-valor:last-child .pe-valor__desc {
+    padding-left: 0;
+  }
+
+  .pe-valor__acento {
+    text-align: center;
+  }
+
+  .pe-valor:first-child .pe-valor__acento,
+  .pe-valor:last-child .pe-valor__acento {
+    padding-left: 0;
+    margin-top: 16px;
+  }
+
   .pe-statement__titulo {
     font-size: clamp(22px, 6vw, 40px);
   }
@@ -1581,6 +1649,10 @@ ul {
     gap: 14px;
   }
 
+  .pr-item__label {
+    text-align: center;
+  }
+
   /* ===== CONTACTO ===== */
   .ct-hero {
     padding: 140px 20px 0;
@@ -1604,11 +1676,16 @@ ul {
     grid-template-columns: 1fr;
     gap: 40px;
     margin-top: 40px;
+    text-align: center;
   }
 
   .ct-form__form input,
   .ct-form__form textarea {
     width: 100%;
+  }
+
+  .ct-form__form .form__btn {
+    align-self: center;
   }
 
   .ct-form__intro {
