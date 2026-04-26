@@ -379,7 +379,7 @@ ul {
 .quienes__content {
   position: relative;
   z-index: 1;
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   margin-bottom: -130px;
   padding: 240px 48px 120px;
@@ -400,13 +400,9 @@ ul {
   font-size: clamp(20px, 2.5vw, 36px);
   line-height: 1.35;
   color: var(--negro);
-  white-space: nowrap;
-  /* Evita que el texto se corte en varias líneas */
+  white-space: normal;
 }
 
-.quienes__texto p+p {
-  margin-top: 40px;
-}
 
 /* Acento verde */
 .quienes__acento {
@@ -442,7 +438,6 @@ ul {
 .statement__titulo {
   font-family: var(--f-archivo);
   font-weight: 700;
-  font-size: clamp(32px, 4.2vw, 62px);
   line-height: 1.15;
   text-transform: uppercase;
   color: var(--negro);
@@ -460,11 +455,11 @@ ul {
 
 .statement__badge-bg {
   position: absolute;
-  top: -20%;
+  top: -15%;
   left: 0.5%;
-  width: 102%;
-  height: 140%;
-  object-fit: fill;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
   pointer-events: none;
 }
 
@@ -1805,7 +1800,7 @@ ul {
 }
 
 .qs-sobre__content {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   text-align: center;
 }
@@ -2299,7 +2294,7 @@ ul {
 
 /* Destacado izquierdo */
 .pe-valor:first-child .pe-valor__acento {
-  margin-top: 0px;
+  margin-top: 125px;
   padding-left: 30px;
 }
 
