@@ -2690,6 +2690,352 @@ ul {
 }
 
 /* ============================================================
+   SUBPÁGINAS MOBILE — ≤768px
+   Estas reglas van DESPUÉS de las base styles de subpáginas
+   para que la cascada las aplique correctamente.
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* ===== QUIÉNES SOMOS ===== */
+  .qs-hero {
+    min-height: auto;
+    overflow: hidden;
+  }
+
+  .qs-hero__content {
+    position: relative;
+    inset: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 40px;
+  }
+
+  .qs-hero__titulo {
+    font-size: clamp(28px, 9vw, 52px);
+  }
+
+  .qs-hero__ilustracion {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    width: clamp(180px, 60%, 300px);
+    margin: 32px auto 0;
+    display: block;
+  }
+
+  .qs-sobre {
+    padding: 80px 20px 60px;
+  }
+
+  .qs-sobre__content {
+    padding: 0;
+  }
+
+  .qs-statement {
+    padding: 40px 20px 60px;
+  }
+
+  .qs-wave {
+    height: 12vw;
+  }
+
+  .qs-equipo__content {
+    padding: 60px 20px 60px;
+  }
+
+  .qs-equipo__header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .qs-equipo__alien {
+    width: clamp(180px, 60%, 300px);
+    margin-top: -80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .qs-equipo__titulo {
+    position: static;
+    transform: none;
+    white-space: normal;
+    text-align: center;
+    font-size: clamp(26px, 8vw, 44px);
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
+
+  .qs-equipo__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .qs-miembro {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .qs-miembro__nombre .qs-badge {
+    white-space: normal;
+  }
+
+  .qs-miembro__desc {
+    text-align: center;
+  }
+
+  /* ===== QUÉ HACEMOS ===== */
+  .qh-hero {
+    padding: 120px 20px 0;
+  }
+
+  .qh-hero__titulo {
+    font-size: clamp(26px, 8vw, 48px);
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+
+  .qh-hero__subtitulo,
+  .qh-hero__acento {
+    font-size: clamp(14px, 4vw, 20px);
+  }
+
+  .qh-hero__ilustracion {
+    width: clamp(240px, 85%, 480px);
+    margin: 0 auto -40px;
+  }
+
+  .qh-statement {
+    padding: 40px 20px 80px;
+  }
+
+  .qh-statement__titulo {
+    font-size: clamp(24px, 7vw, 44px);
+  }
+
+  .qh-servicios__content {
+    padding: 80px 20px 40px;
+  }
+
+  .qh-servicios__titulo {
+    display: block;
+    font-size: clamp(28px, 8vw, 42px);
+  }
+
+  #carrusel-qh .carousel__btn--prev {
+    left: 16px;
+  }
+
+  #carrusel-qh .carousel__btn--next {
+    right: 16px;
+  }
+
+  #carrusel-qh .carousel__track > * {
+    flex: 0 0 calc(80% - 12px);
+  }
+
+  /* ===== POR QUÉ ELEGIRNOS ===== */
+  .pe-hero__content {
+    padding: 80px 20px 0;
+  }
+
+  .pe-fondo {
+    background: linear-gradient(to bottom, var(--claro) 88vw, var(--negro) 88vw);
+  }
+
+  .pe-fondo__ilustracion {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: clamp(200px, 68%, 340px);
+    margin: 32px auto 0;
+    display: block;
+  }
+
+  .pe-quote {
+    padding: 60px 20px;
+  }
+
+  .pe-valores {
+    padding: 40px 20px 80px;
+  }
+
+  .pe-valores__content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .pe-valor__titulo-inner {
+    width: clamp(200px, 85vw, 440px);
+    height: clamp(60px, 14vw, 110px);
+  }
+
+  .pe-valor__titulo-text {
+    white-space: normal;
+  }
+
+  .pe-valor__desc {
+    text-align: center;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  .pe-valor:first-child .pe-valor__desc,
+  .pe-valor:last-child .pe-valor__desc {
+    padding-left: 0;
+  }
+
+  .pe-valor__acento {
+    text-align: center;
+  }
+
+  .pe-valor:first-child .pe-valor__acento,
+  .pe-valor:last-child .pe-valor__acento {
+    padding-left: 0;
+    margin-top: 16px;
+  }
+
+  .pe-statement {
+    padding: 40px 20px 100px;
+  }
+
+  .pe-statement__titulo {
+    font-size: clamp(22px, 6vw, 40px);
+  }
+
+  /* ===== PROYECTOS ===== */
+  .pr-hero__content {
+    max-width: 100%;
+    padding: 120px 20px 0;
+  }
+
+  .pr-hero__titulo {
+    font-size: clamp(22px, 6vw, 40px);
+  }
+
+  .pr-hero__titulo .qs-badge {
+    white-space: normal;
+  }
+
+  .pr-hero__ilustracion {
+    right: 0;
+    bottom: -5%;
+    width: clamp(130px, 38%, 240px);
+    transform: translateY(18%);
+  }
+
+  .pr-sobre {
+    margin-top: -4vw;
+    padding: clamp(140px, 22vw, 260px) 20px 40px;
+  }
+
+  .pr-sobre p {
+    white-space: normal;
+    font-size: clamp(15px, 4vw, 22px);
+  }
+
+  .pr-statement {
+    padding: 20px 20px 60px;
+  }
+
+  .pr-statement__titulo {
+    white-space: normal;
+    font-size: clamp(22px, 6vw, 40px);
+  }
+
+  .pr-proyectos__content {
+    padding: 0 20px;
+  }
+
+  .pr-proyectos__titulo {
+    display: block;
+    font-size: clamp(28px, 7.5vw, 52px);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .pr-proyectos__titulo .qs-badge {
+    white-space: normal;
+  }
+
+  .pr-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .pr-item__label {
+    text-align: center;
+  }
+
+  /* ===== CONTACTO ===== */
+  .ct-hero {
+    padding: 140px 20px 0;
+  }
+
+  .ct-hero__titulo {
+    font-size: clamp(26px, 7.5vw, 52px);
+    margin-bottom: 40px;
+  }
+
+  .ct-hero__ilustracion {
+    width: clamp(200px, 65%, 360px);
+    margin-bottom: -15%;
+  }
+
+  .ct-verde {
+    margin-top: -5vw;
+  }
+
+  .ct-verde__content {
+    padding: 80px 20px 60px;
+  }
+
+  .ct-verde__texto {
+    white-space: normal;
+    font-size: clamp(15px, 4.5vw, 22px);
+  }
+
+  .ct-form {
+    margin-top: -5vw;
+    padding: 60px 20px 100px;
+  }
+
+  .ct-form__body {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .ct-form__form input,
+  .ct-form__form textarea {
+    width: 100%;
+  }
+
+  .ct-form__form .form__btn {
+    align-self: center;
+  }
+
+  .ct-form__intro {
+    font-size: clamp(15px, 4vw, 20px);
+  }
+
+  .ct-form__titulo {
+    font-size: clamp(32px, 8vw, 52px);
+  }
+
+  .ct-form__ilustracion {
+    width: clamp(160px, 50%, 280px);
+    margin: 0 auto;
+  }
+}
+
+/* ============================================================
    SMALL MOBILE — ≤480px
    ============================================================ */
 @media (max-width: 480px) {
