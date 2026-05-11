@@ -202,10 +202,14 @@ ul {
    ============================================================ */
 .hero,
 .quienes,
-.hacemos,
 .contacto {
   position: relative;
   overflow: hidden;
+}
+
+.hacemos {
+  position: relative;
+  overflow: visible;
 }
 
 .proyectos {
@@ -222,6 +226,12 @@ ul {
   position: absolute;
   inset: 0;
   z-index: 0;
+}
+
+/* FONDO_2.svg se extiende levemente bajo la sección para cubrir
+   el hueco entre la ola y el borde de proyectos (que queda encima) */
+.hacemos__bg {
+  bottom: -10px;
 }
 
 .hero__bg img,
@@ -473,7 +483,7 @@ ul {
    ============================================================ */
 .hacemos {
   min-height: 80vh;
-  background: var(--negro);
+  background: var(--claro);
 }
 
 .hacemos__content {
