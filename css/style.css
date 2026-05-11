@@ -407,7 +407,7 @@ ul {
 /* Acento verde */
 .quienes__acento {
   align-self: center;
-  margin-top: 80px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -427,7 +427,7 @@ ul {
    ============================================================ */
 .statement {
   background: var(--claro);
-  padding: 150px 48px;
+  padding: 80px 48px;
 }
 
 .statement__content {
@@ -473,7 +473,7 @@ ul {
    ============================================================ */
 .hacemos {
   min-height: 80vh;
-  background: var(--claro);
+  background: var(--negro);
 }
 
 .hacemos__content {
@@ -734,7 +734,7 @@ button.servicio__link {
    ============================================================ */
 .proyectos {
   min-height: 80vh;
-  margin-top: 0px;
+  margin-top: -2px;
   z-index: 2;
   overflow-x: clip;
   background: var(--claro);
@@ -1327,10 +1327,19 @@ button.servicio__link {
     padding: 48px 20px 60px;
   }
 
+  .hero__subtitulo {
+    white-space: normal;
+    margin-bottom: 0;
+  }
+
   .hero__ilustracion {
-    width: 70%;
-    margin: 0 auto;
-    transform: none;
+    width: 100%;
+    margin: 0;
+    transform: translateY(50px);
+  }
+
+  .hero__ilustracion img {
+    width: clamp(240px, 75%, 340px);
   }
 
   .quienes__content,
@@ -1341,6 +1350,7 @@ button.servicio__link {
 
   .quienes__content {
     margin-bottom: 0;
+    padding-top: 100px;
   }
 
   .statement {
@@ -1374,7 +1384,9 @@ button.servicio__link {
   }
 
   .contacto__ilustracion {
-    display: none;
+    width: clamp(100px, 36%, 160px);
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .form__grid {
