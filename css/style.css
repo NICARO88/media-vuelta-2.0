@@ -662,6 +662,14 @@ ul {
       transparent calc(50% + 0.5px));
 }
 
+.servicio__img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .servicio__footer {
   display: flex;
   align-items: center;
@@ -714,6 +722,11 @@ ul {
 .servicio__link:hover {
   border-color: var(--verde);
   color: var(--verde);
+}
+
+button.servicio__link {
+  background: none;
+  cursor: pointer;
 }
 
 /* ============================================================
@@ -772,7 +785,7 @@ ul {
 }
 
 .proyecto__item {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 16 / 9;
   background-color: #ccc;
   border-radius: 2px;
   position: relative;
@@ -794,6 +807,14 @@ ul {
       #aaa calc(50% - 0.5px),
       #aaa calc(50% + 0.5px),
       transparent calc(50% + 0.5px));
+}
+
+.proyecto__item video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ============================================================
@@ -3030,6 +3051,38 @@ ul {
   .ct-form__ilustracion {
     width: clamp(160px, 50%, 280px);
     margin: 0 auto;
+  }
+
+  /* ===== HOME — CARRUSEL HACEMOS (MOBILE) ===== */
+  #carrusel-hacemos .carousel__btn--prev {
+    left: 16px;
+  }
+
+  #carrusel-hacemos .carousel__btn--next {
+    right: 16px;
+  }
+
+  #carrusel-hacemos .carousel__track > * {
+    flex: 0 0 calc(85% - 12px);
+  }
+
+  /* ===== HOME — CARRUSEL PROYECTOS (MOBILE) ===== */
+  #carrusel-proyectos .carousel__btn--prev {
+    left: 16px;
+  }
+
+  #carrusel-proyectos .carousel__btn--next {
+    right: 16px;
+  }
+
+  #carrusel-proyectos .carousel__track > * {
+    flex: 0 0 calc(85% - 12px);
+  }
+
+  /* ===== HOME — DESCRIPCIÓN SERVICIOS (MOBILE) ===== */
+  .servicio__desc {
+    font-size: 12px;
+    text-align: center;
   }
 }
 

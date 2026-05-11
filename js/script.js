@@ -76,6 +76,17 @@ function initCarousel(el) {
 
 document.querySelectorAll('.carousel').forEach(initCarousel);
 
+// ===== VER MÁS TOGGLE =====
+document.querySelectorAll('.servicio__toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.servicio');
+    const more = card.querySelector('.servicio__desc--more');
+    const expanded = !more.hidden;
+    more.hidden = expanded;
+    btn.textContent = expanded ? 'Ver más' : 'Ver menos';
+  });
+});
+
 // ===== NAVBAR: sombra al hacer scroll =====
 const navbar = document.getElementById('navbar');
 
