@@ -2743,15 +2743,24 @@ button.servicio__link {
   /* ===== QUIÉNES SOMOS ===== */
   .qs-hero {
     min-height: auto;
+    height: 480px;
     overflow: visible;
     position: relative;
     z-index: 1;
-    background: linear-gradient(to bottom, var(--negro) 0%, var(--negro) 88%, var(--claro) 88%);
+    background: var(--claro);
   }
 
   .qs-hero__fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 480px;
     object-fit: fill;
+  }
+
+  .qs-hero::after {
+    content: none;
   }
 
   .qs-hero__content {
@@ -2772,32 +2781,9 @@ button.servicio__link {
     bottom: 30px;
     left: 50%;
     right: auto;
-    /* translateY(50%) straddles the alien across the wave boundary; bottom: 30px
-       raises it slightly so it sits above the wave rather than centered on it */
     transform: translateX(-50%) translateY(50%);
     width: clamp(190px, 56%, 290px);
     z-index: 2;
-  }
-
-  /* Wave overlay: zooms into the bottom wave portion of FONDO_1.svg so it
-     spans ~80px vertically (visible jagged border). background-size 3560px
-     makes the 87-viewbox-unit wave amplitude ≈80px. height 130px shows
-     50px solid dark + 80px of wave. z-index:0 keeps it below content so
-     the alien (z-index:2) renders above without a white stripe. */
-  .qs-hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 130px;
-    background-color: var(--claro);
-    background-image: url('../quienes-somos/assets/FONDO_1.svg');
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 100% 3560px;
-    z-index: 0;
-    pointer-events: none;
   }
 
   .qs-sobre {
