@@ -1792,6 +1792,7 @@ button.servicio__link {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 6005 / 3872;
   position: relative;
   z-index: 0;
 }
