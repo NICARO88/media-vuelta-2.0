@@ -2748,11 +2748,6 @@ button.servicio__link {
     z-index: 1;
   }
 
-  .qs-hero__fondo {
-    height: 520px;
-    object-fit: fill;
-  }
-
   .qs-hero__content {
     display: block;
     text-align: center;
