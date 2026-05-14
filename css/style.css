@@ -1345,7 +1345,7 @@ button.servicio__link {
   .hero__ilustracion {
     width: 100%;
     margin: 0;
-    transform: translateY(50px);
+    transform: translateY(120px);
   }
 
   .hero__ilustracion img {
@@ -1360,7 +1360,7 @@ button.servicio__link {
 
   .quienes__content {
     margin-bottom: 0;
-    padding-top: 100px;
+    padding-top: 160px;
   }
 
   .statement {
@@ -2751,7 +2751,7 @@ button.servicio__link {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 96px 20px 20px;
+    padding: 110px 20px 40px;
   }
 
   .qs-hero__titulo {
@@ -2759,7 +2759,7 @@ button.servicio__link {
     transform: none;
     width: 100%;
     font-size: clamp(24px, 7vw, 44px);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   .qs-hero__ilustracion {
@@ -2810,8 +2810,8 @@ button.servicio__link {
     white-space: normal;
     text-align: center;
     font-size: clamp(26px, 8vw, 44px);
-    margin-top: 16px;
-    margin-bottom: 40px;
+    margin-top: 48px;
+    margin-bottom: 60px;
   }
 
   .qs-equipo__grid {
@@ -2854,8 +2854,14 @@ button.servicio__link {
     margin: 0 auto -40px;
   }
 
-  .qh-statement {
-    padding: 40px 20px 80px;
+  .qh-statement__fondo {
+    width: 100%;
+    height: 440px;
+    object-fit: fill;
+  }
+
+  .qh-statement__content {
+    padding: 40px 20px;
   }
 
   .qh-statement__titulo {
@@ -2890,6 +2896,7 @@ button.servicio__link {
 
   .pe-fondo {
     background: linear-gradient(to bottom, var(--claro) 88vw, var(--negro) 88vw);
+    overflow: visible;
   }
 
   .pe-fondo__ilustracion {
@@ -2897,13 +2904,14 @@ button.servicio__link {
     bottom: auto;
     left: auto;
     transform: none;
-    width: clamp(200px, 68%, 340px);
-    margin: 32px auto 0;
+    width: clamp(200px, 62%, 320px);
+    margin: 0 auto;
     display: block;
+    z-index: 2;
   }
 
   .pe-quote {
-    padding: 60px 20px;
+    padding: 40px 20px 60px;
   }
 
   .pe-valores {
@@ -2956,11 +2964,14 @@ button.servicio__link {
   /* ===== PROYECTOS ===== */
   .pr-hero__content {
     max-width: 100%;
-    padding: 120px 20px 0;
+    padding: 130px 44% 0 20px;
+    align-items: flex-start;
+    justify-content: center;
   }
 
   .pr-hero__titulo {
     font-size: clamp(22px, 6vw, 40px);
+    text-align: left;
   }
 
   .pr-hero__titulo .qs-badge {
@@ -2968,10 +2979,10 @@ button.servicio__link {
   }
 
   .pr-hero__ilustracion {
-    right: 0;
-    bottom: -5%;
-    width: clamp(130px, 38%, 240px);
-    transform: translateY(18%);
+    right: -8px;
+    bottom: 0;
+    width: clamp(150px, 46%, 280px);
+    transform: none;
   }
 
   .pr-sobre {
@@ -3024,8 +3035,8 @@ button.servicio__link {
   }
 
   .ct-hero__ilustracion {
-    width: clamp(200px, 65%, 360px);
-    margin-bottom: -15%;
+    width: clamp(230px, 74%, 400px);
+    margin-bottom: -32%;
   }
 
   .ct-verde {
@@ -3033,7 +3044,7 @@ button.servicio__link {
   }
 
   .ct-verde__content {
-    padding: 80px 20px 60px;
+    padding: 130px 20px 60px;
   }
 
   .ct-verde__texto {
