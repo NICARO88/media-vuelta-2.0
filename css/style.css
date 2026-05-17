@@ -1780,20 +1780,21 @@ button.servicio__link {
 }
 
 /* ── Hero ─────────────────────────────────────────────────── */
-/* FONDO_1 es imagen en flujo normal: su altura natural dicta el alto
-   del section. El borde ondulado inferior queda visible y debajo
-   se ve var(--claro), igual que qs-sobre. */
+/* El section define su propia altura via aspect-ratio (CSS puro,
+   independiente del SVG). El fondo queda absolutamente posicionado
+   dentro del section. */
 .qs-hero {
   position: relative;
   background: var(--claro);
-  min-height: 64.48vw;
+  aspect-ratio: 6005 / 3872;
 }
 
 .qs-hero__fondo {
   display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: 64.48vw;
-  position: relative;
+  height: 100%;
   z-index: 0;
 }
 
@@ -2743,6 +2744,7 @@ button.servicio__link {
 
   /* ===== QUIÉNES SOMOS ===== */
   .qs-hero {
+    aspect-ratio: auto;
     min-height: auto;
     height: 480px;
     overflow: visible;
@@ -2753,10 +2755,8 @@ button.servicio__link {
 
   .qs-hero__fondo {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 480px;
+    inset: 0;
+    height: 100%;
     object-fit: fill;
   }
 
