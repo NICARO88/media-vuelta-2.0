@@ -2878,7 +2878,8 @@ button.servicio__link {
 
   .qh-statement {
     position: relative;
-    background: var(--verde);
+    background: linear-gradient(to bottom, var(--verde) 70%, var(--negro) 88%);
+    padding: 0;
   }
 
   .qh-statement__fondo {
@@ -2895,7 +2896,7 @@ button.servicio__link {
   .qh-statement__content {
     position: relative;
     z-index: 1;
-    padding: 80px 20px 80px;
+    padding: 120px 20px 80px;
     display: flex;
     align-items: center;
     justify-content: center;
