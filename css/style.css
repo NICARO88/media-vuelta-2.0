@@ -2855,7 +2855,7 @@ button.servicio__link {
     padding: 120px 20px 0;
     position: relative;
     z-index: 1;
-    background: linear-gradient(to bottom, var(--claro) 0%, var(--claro) calc(100% - 340px), var(--verde) calc(100% - 180px));
+    background: var(--claro);
   }
 
   .qh-hero__titulo {
@@ -2877,17 +2877,28 @@ button.servicio__link {
   }
 
   .qh-statement {
+    position: relative;
     background: var(--verde);
   }
 
   .qh-statement__fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 720px;
+    height: 100%;
     object-fit: fill;
   }
 
   .qh-statement__content {
-    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+    padding: 80px 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .qh-statement__titulo {
