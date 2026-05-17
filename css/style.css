@@ -1786,6 +1786,7 @@ button.servicio__link {
 .qs-hero {
   position: relative;
   background: var(--claro);
+  min-height: 64.48vw;
 }
 
 .qs-hero__fondo {
