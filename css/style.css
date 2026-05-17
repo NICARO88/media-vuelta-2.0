@@ -1780,19 +1780,24 @@ button.servicio__link {
 }
 
 /* ── Hero ─────────────────────────────────────────────────── */
-/* El section define su propia altura via aspect-ratio (CSS puro,
-   independiente del SVG). El fondo queda absolutamente posicionado
-   dentro del section. */
+/* padding-top trick: sección determina su propia altura (3872/6005 × 100 = 64.48%)
+   sin depender de dimensiones del SVG. Compatible con todos los browsers. */
 .qs-hero {
   position: relative;
   background: var(--claro);
-  aspect-ratio: 6005 / 3872;
+  width: 100%;
+  padding-top: 64.48%;
+  height: 0;
+  overflow: visible;
 }
 
 .qs-hero__fondo {
   display: block;
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -2744,8 +2749,7 @@ button.servicio__link {
 
   /* ===== QUIÉNES SOMOS ===== */
   .qs-hero {
-    aspect-ratio: auto;
-    min-height: auto;
+    padding-top: 0;
     height: 480px;
     overflow: visible;
     position: relative;
@@ -2755,7 +2759,10 @@ button.servicio__link {
 
   .qs-hero__fondo {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 100%;
     object-fit: fill;
   }
