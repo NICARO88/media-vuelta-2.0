@@ -1780,26 +1780,15 @@ button.servicio__link {
 }
 
 /* ── Hero ─────────────────────────────────────────────────── */
-/* padding-top trick: sección determina su propia altura (3872/6005 × 100 = 64.48%)
-   sin depender de dimensiones del SVG. Compatible con todos los browsers. */
 .qs-hero {
   position: relative;
   background: var(--claro);
-  width: 100%;
-  padding-top: 64.48%;
-  height: 0;
-  overflow: visible;
 }
 
 .qs-hero__fondo {
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
-  height: 100%;
+  position: relative;
   z-index: 0;
 }
 
@@ -2749,7 +2738,6 @@ button.servicio__link {
 
   /* ===== QUIÉNES SOMOS ===== */
   .qs-hero {
-    padding-top: 0;
     height: 480px;
     overflow: visible;
     position: relative;
@@ -2762,9 +2750,8 @@ button.servicio__link {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    height: 100%;
-    object-fit: fill;
+    height: 480px;
+    object-fit: cover;
   }
 
   .qs-hero::after {
