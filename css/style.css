@@ -2853,8 +2853,6 @@ button.servicio__link {
   /* ===== QUÉ HACEMOS ===== */
   .qh-hero {
     padding: 120px 20px 0;
-    position: relative;
-    z-index: 1;
     background: var(--claro);
   }
 
@@ -2871,7 +2869,7 @@ button.servicio__link {
 
   .qh-hero__ilustracion {
     width: clamp(240px, 85%, 480px);
-    margin: 0 auto -120px;
+    margin: 0 auto -50px;
     position: relative;
     z-index: 2;
   }

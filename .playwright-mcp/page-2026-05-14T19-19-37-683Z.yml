@@ -1,0 +1,124 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Media Vuelta MEDIA VUELTA Laboratorio Creativo" [ref=e3] [cursor=pointer]:
+      - /url: ../
+      - img "Media Vuelta" [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e6]: MEDIA VUELTA
+        - generic [ref=e7]: Laboratorio Creativo
+    - button "Abrir menú" [ref=e8] [cursor=pointer]
+    - navigation [ref=e12]:
+      - list [ref=e13]:
+        - listitem [ref=e14]:
+          - link "Quiénes somos" [ref=e15] [cursor=pointer]:
+            - /url: ./
+        - listitem [ref=e16]:
+          - link "Qué hacemos" [ref=e17] [cursor=pointer]:
+            - /url: ../que-hacemos/
+        - listitem [ref=e18]:
+          - link "Por qué elegirnos" [ref=e19] [cursor=pointer]:
+            - /url: ../por-que-elegirnos/
+        - listitem [ref=e20]:
+          - link "Proyectos" [ref=e21] [cursor=pointer]:
+            - /url: ../proyectos/
+        - listitem [ref=e22]:
+          - link "Contacto" [ref=e23] [cursor=pointer]:
+            - /url: ../contacto/
+  - main [ref=e24]:
+    - generic [ref=e25]:
+      - img [ref=e26]
+      - generic [ref=e27]:
+        - heading "SOMOS PROFESIONALES, PERO NO CONVENCIONALES" [level=1] [ref=e28]:
+          - text: SOMOS
+          - generic [ref=e29]:
+            - img
+            - text: PROFESIONALES,
+          - text: PERO NO CONVENCIONALES
+        - img "Ilustración Media Vuelta" [ref=e31]
+    - generic [ref=e33]:
+      - paragraph [ref=e34]:
+        - text: Somos una agencia creativa que se mueve por la curiosidad,
+        - text: la imaginación y una mirada crítica a lo establecido. Y sí, todavía
+        - text: nos emocionamos con una buena idea. Creemos que una buena idea tiene que funcionar en la realidad, no solo
+        - text: en el discurso.
+      - paragraph [ref=e35]:
+        - text: Lo que hacemos es con responsabilidad,
+        - text: porque las marcas también deben hacerse cargo de lo que comunican.
+    - heading "CUESTIONAMOS LO QUE HACEMOS, ESO NOS OBLIGA A HACERLO BIEN" [level=2] [ref=e38]:
+      - text: CUESTIONAMOS LO QUE HACEMOS,
+      - text: ESO NOS OBLIGA A
+      - generic [ref=e39]:
+        - img
+        - text: HACERLO BIEN
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - img [ref=e44]
+        - heading "QUIÉNES SOMOS" [level=2] [ref=e45]:
+          - generic [ref=e46]:
+            - img
+            - text: QUIÉNES SOMOS
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - img "Mario Concha" [ref=e49]
+          - generic [ref=e51]:
+            - img
+            - text: MARIO CONCHA
+          - paragraph [ref=e52]:
+            - text: Programa, hace música
+            - text: y enseña historia.
+            - text: Por eso entiende que una
+            - text: marca es un sistema cultural
+            - text: que debe tener sentido.
+        - generic [ref=e53]:
+          - img "Diego Rodríguez" [ref=e54]
+          - generic [ref=e56]:
+            - img
+            - text: DIEGO RODRÍGUEZ
+          - paragraph [ref=e57]:
+            - text: Hace publicidad y la cuestiona
+            - text: al mismo tiempo, la enseña
+            - text: en universidades y aún sigue
+            - text: creyendo en las ideas,
+            - text: especialmente las que existen
+            - text: no solo para llenar un espacio.
+        - generic [ref=e58]:
+          - img "Denisse Navarrete" [ref=e59]
+          - generic [ref=e61]:
+            - img
+            - text: DENISSE NAVARRETE
+          - paragraph [ref=e62]:
+            - text: Diseña, pero sobre todo observa,
+            - text: pregunta y ordena ideas.
+            - text: Convierte conceptos en identidad.
+  - contentinfo [ref=e63]:
+    - generic [ref=e64]:
+      - img "Media Vuelta" [ref=e65]
+      - generic [ref=e66]:
+        - generic [ref=e67]: MEDIA VUELTA
+        - generic [ref=e68]: Laboratorio Creativo
+    - generic [ref=e69]:
+      - link "CONTACTO" [ref=e70] [cursor=pointer]:
+        - /url: ../contacto/
+        - generic [ref=e71]: CONTACTO
+      - link "somos@mediavuelta.cl" [ref=e72] [cursor=pointer]:
+        - /url: mailto:somos@mediavuelta.cl
+    - navigation [ref=e73]:
+      - list [ref=e74]:
+        - listitem [ref=e75]:
+          - link "Home" [ref=e76] [cursor=pointer]:
+            - /url: ../
+        - listitem [ref=e77]:
+          - link "Quiénes somos" [ref=e78] [cursor=pointer]:
+            - /url: ./
+        - listitem [ref=e79]:
+          - link "Qué hacemos" [ref=e80] [cursor=pointer]:
+            - /url: ../que-hacemos/
+        - listitem [ref=e81]:
+          - link "Por Qué Elegirnos" [ref=e82] [cursor=pointer]:
+            - /url: ../por-que-elegirnos/
+        - listitem [ref=e83]:
+          - link "Proyectos" [ref=e84] [cursor=pointer]:
+            - /url: ../proyectos/
+        - listitem [ref=e85]:
+          - link "Contacto" [ref=e86] [cursor=pointer]:
+            - /url: ../contacto/
