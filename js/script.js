@@ -87,6 +87,34 @@ document.querySelectorAll('.servicio__toggle').forEach(btn => {
   });
 });
 
+// ===== FORMULARIOS → WHATSAPP =====
+function initWaForm(form, fields) {
+  if (!form) return;
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const v = f => (f ? f.value.trim() : '');
+    const lines = ['¡Hola! Me contacto desde su sitio web.'];
+    if (v(fields.nombre))   lines.push('Nombre: '   + v(fields.nombre));
+    if (v(fields.correo))   lines.push('Correo: '   + v(fields.correo));
+    if (v(fields.telefono)) lines.push('Teléfono: ' + v(fields.telefono));
+    if (v(fields.mensaje))  lines.push('\n' + v(fields.mensaje));
+    window.open(
+      'https://wa.me/56973466107?text=' + encodeURIComponent(lines.join('\n')),
+      '_blank'
+    );
+  });
+}
+
+initWaForm(
+  document.querySelector('.contacto__form'),
+  { nombre: document.getElementById('nombre'), correo: document.getElementById('correo'), telefono: document.getElementById('telefono'), mensaje: document.getElementById('mensaje') }
+);
+
+initWaForm(
+  document.querySelector('.ct-form__form'),
+  { nombre: document.getElementById('ct-nombre'), correo: document.getElementById('ct-correo'), telefono: document.getElementById('ct-telefono'), mensaje: document.getElementById('ct-mensaje') }
+);
+
 // ===== NAVBAR: sombra al hacer scroll =====
 const navbar = document.getElementById('navbar');
 
