@@ -2926,27 +2926,44 @@ button.servicio__link {
   }
 
   /* ===== POR QUÉ ELEGIRNOS ===== */
-  .pe-hero__content {
-    padding: 80px 20px 0;
-  }
-
   .pe-fondo {
-    background: linear-gradient(to bottom, var(--claro) 62vw, var(--negro) 62vw);
+    background: #1f1f1f;
     overflow: visible;
   }
 
-  .pe-fondo__ilustracion {
+  .pe-fondo__img {
     position: absolute;
-    bottom: -30px;
-    left: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+  }
+
+  .pe-hero__content {
+    position: relative;
+    z-index: 1;
+    padding: 120px 20px 40px;
+  }
+
+  .pe-fondo__ilustracion {
+    position: relative;
+    bottom: auto;
+    left: auto;
     right: auto;
-    transform: translateX(-50%);
-    width: clamp(200px, 58%, 300px);
-    z-index: 3;
+    transform: none;
+    z-index: 1;
+    width: clamp(180px, 65%, 260px);
+    margin: 0 auto;
+    display: block;
   }
 
   .pe-quote {
-    padding: 160px 20px 60px;
+    padding: 40px 20px 60px;
+  }
+
+  .pe-quote p {
+    font-size: clamp(20px, 5.5vw, 26px);
+    line-height: 1.35;
   }
 
   .pe-valores {
@@ -2958,6 +2975,10 @@ button.servicio__link {
     gap: 60px;
   }
 
+  .pe-valor__titulo {
+    margin-bottom: 0;
+  }
+
   .pe-valor__titulo-inner {
     width: clamp(200px, 85vw, 440px);
     height: clamp(60px, 14vw, 110px);
@@ -2967,10 +2988,14 @@ button.servicio__link {
     white-space: normal;
   }
 
+  .pe-hero__subtitulo {
+    font-size: clamp(17px, 4.8vw, 22px);
+  }
+
   .pe-valor__desc {
     text-align: center;
     padding-left: 0;
-    margin-top: 40px;
+    margin-top: 24px;
   }
 
   .pe-valor:first-child .pe-valor__desc,
@@ -3178,7 +3203,7 @@ button.servicio__link {
   }
 
   .pe-fondo {
-    background: linear-gradient(to bottom, var(--claro) 95vw, var(--negro) 95vw);
+    background: #1f1f1f;
   }
 
   .pe-valor__titulo-inner {
