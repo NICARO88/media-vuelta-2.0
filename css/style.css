@@ -3024,7 +3024,7 @@ button.servicio__link {
   /* ===== PROYECTOS ===== */
   .pr-hero__content {
     max-width: 100%;
-    padding: 120px 20px 0;
+    padding: 120px 20px 50px;
     align-items: center;
     justify-content: center;
   }
@@ -3039,14 +3039,14 @@ button.servicio__link {
   }
 
   .pr-hero__ilustracion {
-    right: -6px;
-    bottom: 0;
+    right: -57px;
+    bottom: -135px;
     width: clamp(170px, 52%, 300px);
     transform: none;
   }
 
   .pr-sobre {
-    margin-top: -4vw;
+    margin-top: -12vw;
     padding: clamp(140px, 22vw, 260px) 20px 40px;
   }
 
@@ -3215,7 +3215,7 @@ button.servicio__link {
   }
 
   .pr-hero__ilustracion {
-    width: clamp(110px, 32%, 200px);
+    width: clamp(110px, 70%, 200px);
   }
 
   .ct-form__titulo {
