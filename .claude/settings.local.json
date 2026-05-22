@@ -7,7 +7,10 @@
       "mcp__playwright__browser_evaluate",
       "Bash(git push *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(npx playwright *)",
+      "Bash(node audit.js)",
+      "Bash(node -e ' *)"
     ]
   }
 }
