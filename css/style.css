@@ -1472,7 +1472,7 @@ button.servicio__link {
   }
 
   .pe-statement {
-    padding: 60px var(--pad-x) 60px;
+    padding: 0px var(--pad-x) 60px;
   }
 
   /* pr- mobile */
@@ -1948,7 +1948,7 @@ button.servicio__link {
 /* ── Equipo ───────────────────────────────────────────────── */
 .qs-equipo {
   background: var(--verde);
-  padding-bottom: 120px;
+  padding-bottom: 50px;
 }
 
 .qs-equipo__content {
@@ -2946,6 +2946,10 @@ button.servicio__link {
     background: linear-gradient(to bottom, var(--claro) 0%, var(--claro) 77%, var(--negro) 93%);
     padding: 0;
   }
+  .qs-statement__titulo {
+    margin-top:-64px;
+    margin-bottom:22px;
+  }
 
   .qh-statement__fondo {
     position: absolute;
@@ -3010,6 +3014,9 @@ button.servicio__link {
     position: relative;
     z-index: 1;
     padding: 80px 20px 40px;
+  }
+  .pe-hero__titulo {
+    margin-top: 80px;
   }
 
   .pe-fondo__ilustracion {
@@ -3081,7 +3088,7 @@ button.servicio__link {
   }
 
   .pe-statement {
-    padding: 60px var(--pad-x) 60px;
+    padding: 0px var(--pad-x) 81px;
   }
 
   .pe-statement__titulo {
