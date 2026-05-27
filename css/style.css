@@ -1367,8 +1367,8 @@ button.servicio__link {
 
   .hero__ilustracion {
     width: 100%;
-    margin: 0;
-    transform: translateY(100px);
+    margin: -76px;
+    transform: translateY(53px);
   }
 
   .hero__ilustracion img {
@@ -1398,6 +1398,10 @@ button.servicio__link {
   .hacemos__titulo {
     width: 80%;
     margin: 0 auto 40px;
+  }
+
+  .proyectos {
+    min-height: unset;
   }
 
   .proyectos__titulo {
@@ -2251,7 +2255,7 @@ button.servicio__link {
 
 .pe-fondo__ilustracion {
   position: absolute;
-  bottom: -50%;
+  bottom: -35%;
   left: 50%;
   transform: translateX(-50%);
   width: clamp(510px, 61.2%, 850px);
