@@ -1381,6 +1381,10 @@ button.servicio__link {
     padding: 64px var(--pad-x);
   }
 
+  .quienes {
+    min-height: unset;
+  }
+
   .quienes__content {
     margin-bottom: 0;
     padding-top: 60px;
@@ -1535,6 +1539,7 @@ button.servicio__link {
 
   .quienes__acento-texto {
     padding: 10px 48px 14px;
+    margin-top: 24px;
   }
 
   /* ===== QUIÉNES SOMOS ===== */
