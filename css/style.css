@@ -402,7 +402,6 @@ ul {
    QUIÉNES SOMOS
    ============================================================ */
 .quienes {
-  min-height: 80vh;
   background: var(--claro);
 }
 
@@ -412,7 +411,7 @@ ul {
   max-width: 1400px;
   margin: 0 auto;
   margin-bottom: -130px;
-  padding: 183px 48px 120px;
+  padding: 183px 48px 170px;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -437,7 +436,7 @@ ul {
 /* Acento verde */
 .quienes__acento {
   align-self: center;
-  margin-top: calc(40vh - 224px);
+  margin-top: clamp(60px, 4.8vw, 88px);
   text-align: center;
 }
 
@@ -1670,6 +1669,7 @@ button.servicio__link {
 
   .pe-fondo__ilustracion {
     position: relative;
+    top: auto;
     bottom: auto;
     left: auto;
     transform: none;
@@ -2210,7 +2210,7 @@ button.servicio__link {
   top: 0;
   left: 0;
   right: 0;
-  padding: 340px 48px 0;
+  padding: clamp(110px, 11.9vw, 200px) 48px 0;
   text-align: center;
   z-index: 2;
 }
@@ -2260,7 +2260,8 @@ button.servicio__link {
 
 .pe-fondo__ilustracion {
   position: absolute;
-  bottom: -35%;
+  /* Center alien on the 64vw color border: top = border - alien_height/2 */
+  top: calc(64vw - clamp(255px, 30.6vw, 425px));
   left: 50%;
   transform: translateX(-50%);
   width: clamp(510px, 61.2%, 850px);
@@ -2465,7 +2466,7 @@ button.servicio__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 48px 0; /* 96px = altura navbar, evita que el texto quede bajo ella */
+  padding: 0px 48px 115px; /* 96px = altura navbar, evita que el texto quede bajo ella */
 }
 
 .pr-hero__titulo {
@@ -2501,7 +2502,7 @@ button.servicio__link {
   z-index: 1;
   background: var(--claro);
   margin-top: -1vw;
-  padding: clamp(180px, 20vw, 320px) 48px 60px;
+  padding: clamp(180px, 20vw, 320px) 48px 90px;
 }
 
 .pr-sobre__content {
@@ -2522,7 +2523,7 @@ button.servicio__link {
 /* Statement: texto alineado a la izquierda tal como el PDF */
 .pr-statement {
   background: var(--claro);
-  padding: 250px 48px 200px;
+  padding: 60px 48px 110px;
 }
 
 .pr-statement__content {
@@ -2565,7 +2566,7 @@ button.servicio__link {
   font-size: clamp(34px, 5.4vw, 82px);
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 250px;
+  margin-bottom: 48px;
 }
 
 .pr-proyectos__titulo .qs-badge {
@@ -2663,7 +2664,7 @@ button.servicio__link {
   margin: 0 auto;
   position: relative;
   z-index: 10;
-  margin-bottom: -34%;
+  margin-bottom: -29%;
 }
 
 .ct-hero__ilustracion img {
@@ -3030,6 +3031,7 @@ button.servicio__link {
 
   .pe-fondo__ilustracion {
     position: relative;
+    top: auto;
     bottom: auto;
     left: auto;
     right: auto;
