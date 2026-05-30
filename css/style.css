@@ -2958,7 +2958,7 @@ button.servicio__link {
   }
   .qs-statement__titulo {
     margin-top:-64px;
-    margin-bottom:22px;
+    margin-bottom:30px;
   }
 
   .qh-statement__fondo {
@@ -3295,7 +3295,7 @@ button.servicio__link {
   }
 
   .qs-equipo__alien {
-    margin-top: -199px;
+    margin-top: -211px;
     width: clamp(200px, 65%, 300px);
     margin-left: 88px;
     align-self: flex-start;
