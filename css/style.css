@@ -1911,7 +1911,7 @@ button.servicio__link {
 /* ── Statement ────────────────────────────────────────────── */
 .qs-statement {
   background: var(--claro);
-  padding: 220px 48px 320px;
+  padding: 60px 48px 160px;
 }
 
 .qs-statement__content {
@@ -1968,7 +1968,7 @@ button.servicio__link {
 
 .qs-equipo__header {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 16px;
   min-height: 120px;
 }
 
@@ -2112,7 +2112,7 @@ button.servicio__link {
 
 .qh-hero__ilustracion {
   width: clamp(405px, 74%, 945px);
-  margin: 0 auto -95px;
+  margin: 0 auto -110px;
   position: relative;
   z-index: 1;
 }
@@ -2260,8 +2260,8 @@ button.servicio__link {
 
 .pe-fondo__ilustracion {
   position: absolute;
-  /* Center alien on the 64vw color border: top = border - alien_height/2 */
-  top: calc(64vw - clamp(255px, 30.6vw, 425px));
+  /* Alien shifted up ~60px from center to reduce air above (desktop only) */
+  top: calc(59.8vw - clamp(255px, 30.6vw, 425px));
   left: 50%;
   transform: translateX(-50%);
   width: clamp(510px, 61.2%, 850px);
@@ -2278,7 +2278,7 @@ button.servicio__link {
   position: relative;
   z-index: 0;
   background: var(--negro);
-  padding: clamp(250px, 37vw, 600px) 48px 126px;
+  padding: clamp(250px, 25.5vw, 367px) 48px 126px;
   text-align: center;
 }
 
@@ -2502,7 +2502,7 @@ button.servicio__link {
   z-index: 1;
   background: var(--claro);
   margin-top: -1vw;
-  padding: clamp(180px, 20vw, 320px) 48px 90px;
+  padding: clamp(180px, 14vw, 320px) 48px 90px;
 }
 
 .pr-sobre__content {
@@ -2523,7 +2523,7 @@ button.servicio__link {
 /* Statement: texto alineado a la izquierda tal como el PDF */
 .pr-statement {
   background: var(--claro);
-  padding: 60px 48px 110px;
+  padding: 60px 48px 40px;
 }
 
 .pr-statement__content {
@@ -2698,7 +2698,7 @@ button.servicio__link {
 .ct-verde__content {
   position: relative;
   z-index: 1;
-  padding: clamp(300px, 37.5vw, 570px) 48px clamp(220px, 27vw, 380px);
+  padding: clamp(260px, 25vw, 360px) 48px clamp(100px, 18.5vw, 210px);
   text-align: center;
 }
 
