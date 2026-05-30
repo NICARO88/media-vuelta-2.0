@@ -1,5 +1,0 @@
-[     265ms] [LOG] Live reload enabled. @ http://127.0.0.1:5500/index.html:329
-[     547ms] [ERROR] Failed to load resource: net::ERR_CACHE_OPERATION_NOT_SUPPORTED @ http://127.0.0.1:5500/proyectos/assets/Publicidad_Ads_Contenido.mp4:0
-[     551ms] [ERROR] Failed to load resource: net::ERR_CACHE_OPERATION_NOT_SUPPORTED @ http://127.0.0.1:5500/proyectos/assets/Copia%20de%20Contenido_Digital_ads.mp4:0
-[     564ms] [ERROR] Failed to load resource: net::ERR_CACHE_OPERATION_NOT_SUPPORTED @ http://127.0.0.1:5500/proyectos/assets/Contenido_Digital_Publicidad.mp4:0
-[    1676ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5500/favicon.ico:0
