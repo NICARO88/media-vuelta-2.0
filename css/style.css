@@ -448,7 +448,7 @@ ul {
   color: var(--negro);
   background: var(--verde);
   padding: 3px 48px 12px;
-  margin-top: 50px;
+  margin-top: 45px;
   display: inline-block;
 }
 
@@ -1877,7 +1877,7 @@ button.servicio__link {
   right: 48px;
   bottom: -120px;
   z-index: 2;
-  transform: translateY(30px);
+  transform: translateY(45px);
 }
 
 .qs-hero__ilustracion img {
@@ -3295,7 +3295,7 @@ button.servicio__link {
   }
 
   .qs-equipo__alien {
-    margin-top: -174px;
+    margin-top: -199px;
     width: clamp(200px, 65%, 300px);
     margin-left: 88px;
     align-self: flex-start;
