@@ -1422,7 +1422,7 @@ button.servicio__link {
     padding: 40px var(--pad-x) 40px;
   }
 
-  .contacto__titulo { margin: 0 auto 24px; }
+  .contacto__titulo { margin: 18px auto 24px; }
   .contacto__intro { margin-bottom: 24px; }
 
   .contacto__body {
