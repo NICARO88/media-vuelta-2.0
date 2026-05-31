@@ -912,7 +912,7 @@ button.servicio__link {
   width: clamp(280px, 56%, 460px);
   position: relative;
   container-type: inline-size;
-  margin: 0 auto clamp(20px, 3.5vw, 48px);
+  margin: -32px auto clamp(75px, 3.5vw, 48px);
 }
 
 .contacto__titulo-texto {
@@ -1375,11 +1375,12 @@ button.servicio__link {
   }
 
   .quienes__content,
-  .hacemos__content,
-  .proyectos__content {
+  .hacemos__content{
     padding: 64px var(--pad-x);
   }
-
+  .proyectos__content {
+        padding: 64px var(--pad-x) 120px;
+  }
   .quienes {
     min-height: unset;
   }
@@ -2502,7 +2503,7 @@ button.servicio__link {
   z-index: 1;
   background: var(--claro);
   margin-top: -1vw;
-  padding: clamp(180px, 14vw, 320px) 48px 90px;
+  padding: clamp(180px, 14vw, 320px) 48px 68px;
 }
 
 .pr-sobre__content {
@@ -2523,7 +2524,7 @@ button.servicio__link {
 /* Statement: texto alineado a la izquierda tal como el PDF */
 .pr-statement {
   background: var(--claro);
-  padding: 60px 48px 40px;
+  padding: 0px 48px 40px;
 }
 
 .pr-statement__content {
@@ -3132,7 +3133,7 @@ button.servicio__link {
 
   .pr-sobre {
     margin-top: -12vw;
-    padding: 146px var(--pad-x) 38px;
+    padding: 146px var(--pad-x) 23px;
   }
 
   .pr-sobre p {
@@ -3202,7 +3203,7 @@ button.servicio__link {
   }
 
   .ct-verde__content {
-    padding: 100px 20px 50px;
+    padding: 100px 20px 65px;
   }
 
   .ct-verde__texto {
@@ -3212,7 +3213,7 @@ button.servicio__link {
 
   .ct-form {
     margin-top: -5vw;
-    padding: 60px 20px 60px;
+    padding: 100px 20px 60px;
   }
 
   .ct-form__body {
