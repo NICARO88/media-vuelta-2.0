@@ -2655,7 +2655,7 @@ button.servicio__link {
   text-transform: uppercase;
   color: var(--negro);
   line-height: 1.1;
-  margin-bottom: 80px;
+  margin-bottom: 5px;
 }
 
 /* Alien: z-index alto en el stacking context raíz para aparecer
