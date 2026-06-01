@@ -372,7 +372,7 @@ ul {
   white-space: nowrap;
   margin: 0 auto -165px;
   position: relative;
-  top: 0px; /* ← ajustar: positivo = baja, negativo = sube (solo desktop) */
+  top: 32px; /* ← ajustar: positivo = baja, negativo = sube (solo desktop) */
 }
 
 /* UFO centrado horizontalmente al fondo del hero, solapando la transición */
@@ -404,7 +404,7 @@ ul {
   max-width: 1400px;
   margin: 0 auto;
   margin-bottom: -130px;
-  padding: 183px 48px 170px;
+  padding: 82px 48px 170px;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -429,7 +429,7 @@ ul {
 /* Acento verde */
 .quienes__acento {
   align-self: center;
-  margin-top: clamp(60px, 4.8vw, 88px);
+  margin-top: clamp(29px, 1.3vw, 88px);
   text-align: center;
 }
 
@@ -450,7 +450,7 @@ ul {
    ============================================================ */
 .statement {
   background: var(--claro);
-  padding: var(--sp-lg) var(--pad-x);
+  padding: 46px var(--pad-x) 89px;
 }
 
 .statement__content {
@@ -504,7 +504,7 @@ ul {
   z-index: 1;
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: var(--sp-2xl) var(--pad-x);
+  padding: var(--sp-2xl) var(--pad-x) 63px;
 }
 
 .hacemos__titulo {
@@ -519,7 +519,7 @@ ul {
   aspect-ratio: 2454 / 745;
   width: 50%;
   /* ← cambia SOLO este valor para escalar todo */
-  margin: 0 auto clamp(40px, 5.5vw, 80px);
+  margin: -40px auto clamp(40px, 5.5vw, 80px);
   container-type: inline-size;
 }
 
@@ -1369,7 +1369,7 @@ button.servicio__link {
 
   .quienes__content,
   .hacemos__content{
-    padding: 64px var(--pad-x);
+    padding: 64px var(--pad-x) 4px;
   }
   .proyectos__content {
         padding: 64px var(--pad-x) 120px;
@@ -1857,7 +1857,7 @@ button.servicio__link {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -89%);
   width: 90%;
 }
 
@@ -1869,7 +1869,7 @@ button.servicio__link {
   width: clamp(286px, 47%, 598px);
   position: absolute;
   right: 48px;
-  bottom: -120px;
+  bottom: -172px;
   z-index: 2;
   transform: translateY(45px);
 }
@@ -1881,7 +1881,7 @@ button.servicio__link {
 /* ── Sobre ────────────────────────────────────────────────── */
 .qs-sobre {
   background: var(--claro);
-  padding: 300px 48px 120px;
+  padding: 218px 48px 120px;
 }
 
 .qs-sobre__content {
@@ -1905,7 +1905,7 @@ button.servicio__link {
 /* ── Statement ────────────────────────────────────────────── */
 .qs-statement {
   background: var(--claro);
-  padding: 60px 48px 160px;
+  padding: 10px 48px 160px;
 }
 
 .qs-statement__content {
@@ -2082,8 +2082,8 @@ button.servicio__link {
   text-transform: uppercase;
   color: var(--negro);
   line-height: 1.3;
-  margin-top: 200px;
-  margin-bottom: 32px;
+  margin-top: 90px;
+  margin-bottom: 54px;
 }
 
 .qh-hero__subtitulo {
@@ -2100,8 +2100,8 @@ button.servicio__link {
   font-weight: 800;
   font-size: clamp(31px, 2.7vw, 39px);
   color: var(--negro);
-  margin-bottom: 135px;
-  margin-top: 40px;
+  margin-bottom: 45px;
+  margin-top: 74px;
 }
 
 .qh-hero__ilustracion {
@@ -2254,8 +2254,8 @@ button.servicio__link {
 
 .pe-fondo__ilustracion {
   position: absolute;
-  /* Alien shifted up ~60px from center to reduce air above (desktop only) */
-  top: calc(59.8vw - clamp(255px, 30.6vw, 425px));
+  /* min() cap prevents alien from drifting too far below text on wide viewports (>~1500px) */
+  top: min(calc(59.8vw - clamp(255px, 30.6vw, 425px)), 470px);
   left: 50%;
   transform: translateX(-50%);
   width: clamp(510px, 61.2%, 850px);
@@ -2272,7 +2272,7 @@ button.servicio__link {
   position: relative;
   z-index: 0;
   background: var(--negro);
-  padding: clamp(250px, 25.5vw, 367px) 48px 126px;
+  padding: clamp(250px, 21.5vw, 367px) 48px 80px;
   text-align: center;
 }
 
@@ -2393,7 +2393,7 @@ button.servicio__link {
 /* Statement */
 .pe-statement {
   background: var(--negro);
-  padding: 100px 48px 200px;
+  padding: 50px 48px 100px;
   text-align: center;
 }
 
@@ -2460,7 +2460,8 @@ button.servicio__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 48px 115px; /* 96px = altura navbar, evita que el texto quede bajo ella */
+  padding: 0px 48px 0px; /* 96px = altura navbar, evita que el texto quede bajo ella */
+  margin-bottom: 70px;
 }
 
 .pr-hero__titulo {
@@ -2476,7 +2477,7 @@ button.servicio__link {
 /* Alien grande en el borde derecho, solapando el corte verde/blanco */
 .pr-hero__ilustracion {
   position: absolute;
-  right: -20%;
+  right: -23%;
   bottom: -18%;
   width: clamp(520px, 68%, 1040px);
   z-index: 3;
@@ -2496,7 +2497,7 @@ button.servicio__link {
   z-index: 1;
   background: var(--claro);
   margin-top: -1vw;
-  padding: clamp(180px, 14vw, 320px) 48px 68px;
+  padding: clamp(106px, 10vw, 320px) 48px 68px;
 }
 
 .pr-sobre__content {
