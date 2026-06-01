@@ -313,7 +313,7 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 64px 24px 0;
+  padding: 106px 24px 0;
 }
 
 .hero__texto {
@@ -1347,7 +1347,7 @@ button.servicio__link {
 
   .hero__content {
     flex-direction: column;
-    padding: 48px 20px 60px;
+    padding: 10px 20px 60px;
   }
 
   .hero__titulo { margin-top: 20px; }
@@ -2066,7 +2066,7 @@ button.servicio__link {
 /* Hero */
 .qh-hero {
   background: var(--claro);
-  padding: 120px 48px 0;
+  padding: 196px 48px 0;
 }
 
 .qh-hero__content {
@@ -2201,7 +2201,7 @@ button.servicio__link {
 
 .pe-hero__content {
   position: absolute;
-  top: 0;
+  top: 115px;
   left: 0;
   right: 0;
   padding: clamp(110px, 11.9vw, 200px) 48px 0;
@@ -2254,8 +2254,8 @@ button.servicio__link {
 
 .pe-fondo__ilustracion {
   position: absolute;
-  /* min() cap prevents alien from drifting too far below text on wide viewports (>~1500px) */
-  top: min(calc(59.8vw - clamp(255px, 30.6vw, 425px)), 470px);
+  /* 65vw places alien so gap(subtitle→alien) ≈ gap(title→subtitle) ≈ 60px */
+  top: min(calc(65vw - clamp(255px, 30.6vw, 425px)), 520px);
   left: 50%;
   transform: translateX(-50%);
   width: clamp(510px, 61.2%, 850px);
@@ -2460,8 +2460,8 @@ button.servicio__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 48px 0px; /* 96px = altura navbar, evita que el texto quede bajo ella */
-  margin-bottom: 70px;
+  padding: 10px 48px 0px; /* padding-top:10 → flex-center shifts +5px to match qs-hero title Y */
+  margin-bottom: 126px;
 }
 
 .pr-hero__titulo {
@@ -2631,7 +2631,7 @@ button.servicio__link {
    (z-index:1) pueda pintarse encima en la zona de solapamiento. */
 .ct-hero {
   background: var(--claro);
-  padding: 240px 48px 0;
+  padding: 286px 48px 0;
   text-align: center;
   position: relative;
   overflow: visible;
@@ -2693,7 +2693,7 @@ button.servicio__link {
 .ct-verde__content {
   position: relative;
   z-index: 1;
-  padding: clamp(260px, 25vw, 360px) 48px clamp(100px, 18.5vw, 210px);
+  padding: clamp(260px, 25vw, 360px) 48px clamp(100px, 18.5vw, 226px);
   text-align: center;
 }
 
@@ -2922,7 +2922,7 @@ button.servicio__link {
 
   /* ===== QUÉ HACEMOS ===== */
   .qh-hero {
-    padding: 120px 20px 0;
+    padding: 130px 20px 0;
     background: var(--claro);
   }
 
@@ -3017,8 +3017,9 @@ button.servicio__link {
 
   .pe-hero__content {
     position: relative;
+    top: 0;
     z-index: 1;
-    padding: 80px 20px 40px;
+    padding: 70px 20px 40px;
   }
   .pe-hero__titulo {
     margin-top: 80px;
@@ -3104,8 +3105,8 @@ button.servicio__link {
   /* ===== PROYECTOS ===== */
   .pr-hero__content {
     max-width: 100%;
-    padding: 120px 20px 50px;
-    align-items: center;
+    padding: 150px 20px 50px;
+    align-items: flex-start;
     justify-content: center;
   }
 
@@ -3118,15 +3119,21 @@ button.servicio__link {
     white-space: normal;
   }
 
+  .pr-hero__fondo {
+    min-height: 380px;
+    object-fit: fill;
+  }
+
   .pr-hero__ilustracion {
     right: -52px;
-    bottom: -116px;
+    top: 195px;
+    bottom: auto;
     width: clamp(100px, 30%, 170px);
     transform: none;
   }
 
   .pr-sobre {
-    margin-top: -12vw;
+    margin-top: -180px;
     padding: 146px var(--pad-x) 23px;
   }
 
@@ -3179,7 +3186,7 @@ button.servicio__link {
 
   /* ===== CONTACTO ===== */
   .ct-hero {
-    padding: 140px 20px 0;
+    padding: 150px 20px 0;
   }
 
   .ct-hero__titulo {
@@ -3309,7 +3316,7 @@ button.servicio__link {
   }
 
   .pr-hero__ilustracion {
-    width: clamp(110px, 70%, 200px);
+    width: clamp(110px, 70%, 187px);
   }
 
   .ct-form__titulo {
