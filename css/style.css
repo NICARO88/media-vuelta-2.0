@@ -2254,8 +2254,8 @@ button.servicio__link {
 
 .pe-fondo__ilustracion {
   position: absolute;
-  /* 65vw places alien so gap(subtitle→alien) ≈ gap(title→subtitle) ≈ 60px */
-  top: min(calc(65vw - clamp(255px, 30.6vw, 425px)), 520px);
+  /* 45.9vw−150px: proporcional al SVG (mountain top ≈62.5vw), sin cap que quiebre en pantallas anchas */
+  top: calc(45.9vw - 150px);
   left: 50%;
   transform: translateX(-50%);
   width: clamp(510px, 61.2%, 850px);
