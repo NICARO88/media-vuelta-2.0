@@ -363,23 +363,16 @@ ul {
 
 .hero__subtitulo {
   font-family: var(--f-archivo);
-  /* Restaurar la fuente original */
   font-weight: 600;
-  /* Restaurar el peso original */
   font-size: clamp(18px, 2vw, 28px);
-  /* Restaurar el tamaño original */
   line-height: 1.4;
-  /* Restaurar el interlineado original */
   color: var(--negro);
-  /* Restaurar el color original */
   max-width: 100%;
-  /* Restaurar el ancho máximo */
   text-align: center;
-  /* Mantener el texto centrado */
   white-space: nowrap;
-  /* Mantener el texto en una sola línea */
   margin: 0 auto -165px;
-  /* Centrar horizontalmente con margen automático */
+  position: relative;
+  top: 0px; /* ← ajustar: positivo = baja, negativo = sube (solo desktop) */
 }
 
 /* UFO centrado horizontalmente al fondo del hero, solapando la transición */
@@ -2223,7 +2216,7 @@ button.servicio__link {
   text-transform: uppercase;
   color: var(--negro);
   line-height: 1.1;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .pe-hero__subtitulo {
