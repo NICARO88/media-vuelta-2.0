@@ -1567,7 +1567,7 @@ button.servicio__link {
   }
 
   .qs-sobre {
-    padding: 60px var(--pad-x) 60px;
+    padding: 90px var(--pad-x) 60px;
   }
 
   .qs-sobre__content {
@@ -1866,22 +1866,22 @@ button.servicio__link {
 }
 
 .qs-hero__ilustracion {
-  width: clamp(286px, 47%, 598px);
+  width: clamp(286px, 59%, 750px);
   position: absolute;
-  right: 48px;
-  bottom: -172px;
+  right: -120px;
+  bottom: -126px;
   z-index: 2;
   transform: translateY(45px);
 }
 
 .qs-hero__ilustracion img {
-  width: 100%;
+  width: 85%;
 }
 
 /* ── Sobre ────────────────────────────────────────────────── */
 .qs-sobre {
   background: var(--claro);
-  padding: 218px 48px 120px;
+  padding: 180px 48px 120px;
 }
 
 .qs-sobre__content {
@@ -2112,9 +2112,10 @@ button.servicio__link {
 }
 
 .qh-hero__ilustracion img {
-  width: 100%;
+  width: 85%;
   height: auto;
   display: block;
+  margin: 0 auto;
   clip-path: inset(0 0 7% 0);
 }
 
@@ -2256,7 +2257,7 @@ button.servicio__link {
   position: absolute;
   /* 45.9vw−150px: proporcional al SVG (mountain top ≈62.5vw), sin cap que quiebre en pantallas anchas */
   top: calc(45.9vw - 150px);
-  left: 50%;
+  left: calc(50% + 30px);
   transform: translateX(-50%);
   width: clamp(510px, 61.2%, 850px);
   z-index: 2;
@@ -2393,7 +2394,7 @@ button.servicio__link {
 /* Statement */
 .pe-statement {
   background: var(--negro);
-  padding: 50px 48px 100px;
+  padding: 25px 48px 125px;
   text-align: center;
 }
 
@@ -2428,13 +2429,16 @@ button.servicio__link {
   background: none;
   overflow: visible;
   z-index: 2;
+  height: clamp(686px, 58.5vw, 1000px); /* 58.5vw ≈ 842px@1440 — reduce empty green below badge */
 }
 
 .pr-hero__fondo {
   display: block;
   width: 100%;
   height: auto;
-  position: relative;
+  position: absolute; /* pinned to section bottom so wave stays at edge */
+  bottom: 0;
+  left: 0;
   z-index: 0;
 }
 
@@ -2452,16 +2456,15 @@ button.servicio__link {
   height: 160%;
 }
 
-/* Texto centrado horizontal y verticalmente en la sección hero */
+/* Título anclado a 286px desde el top del hero (coincide con alineación cross-page) */
 .pr-hero__content {
   position: absolute;
   inset: 0;
   z-index: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 10px 48px 0px; /* padding-top:10 → flex-center shifts +5px to match qs-hero title Y */
-  margin-bottom: 126px;
+  padding: 286px 48px 0;
 }
 
 .pr-hero__titulo {
@@ -2477,7 +2480,7 @@ button.servicio__link {
 /* Alien grande en el borde derecho, solapando el corte verde/blanco */
 .pr-hero__ilustracion {
   position: absolute;
-  right: -23%;
+  right: -27%;
   bottom: -18%;
   width: clamp(520px, 68%, 1040px);
   z-index: 3;
@@ -2485,7 +2488,7 @@ button.servicio__link {
 }
 
 .pr-hero__ilustracion img {
-  width: 100%;
+  width: 85%;
   height: auto;
   display: block;
 }
@@ -2497,7 +2500,7 @@ button.servicio__link {
   z-index: 1;
   background: var(--claro);
   margin-top: -1vw;
-  padding: clamp(106px, 10vw, 320px) 48px 68px;
+  padding: clamp(106px, 10vw, 320px) 48px 88px;
 }
 
 .pr-sobre__content {
@@ -2518,7 +2521,7 @@ button.servicio__link {
 /* Statement: texto alineado a la izquierda tal como el PDF */
 .pr-statement {
   background: var(--claro);
-  padding: 0px 48px 40px;
+  padding: 0px 48px 70px;
 }
 
 .pr-statement__content {
@@ -2659,13 +2662,14 @@ button.servicio__link {
   margin: 0 auto;
   position: relative;
   z-index: 10;
-  margin-bottom: -29%;
+  margin-bottom: -25%;
 }
 
 .ct-hero__ilustracion img {
-  width: 100%;
+  width: 85%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 /* ct-verde: sube con margin-top negativo para que la ola de FONDO_1.svg
@@ -2693,7 +2697,7 @@ button.servicio__link {
 .ct-verde__content {
   position: relative;
   z-index: 1;
-  padding: clamp(260px, 25vw, 360px) 48px clamp(100px, 18.5vw, 226px);
+  padding: clamp(260px, 25vw, 360px) 48px clamp(100px, 20.5vw, 250px);
   text-align: center;
 }
 
@@ -2843,16 +2847,16 @@ button.servicio__link {
 
   .qs-hero__ilustracion {
     position: absolute;
-    bottom: 30px;
-    left: 50%;
+    bottom: 50px;
+    left: 58%;
     right: auto;
     transform: translateX(-50%) translateY(50%);
-    width: clamp(190px, 56%, 290px);
+    width: clamp(190px, 79%, 290px);
     z-index: 2;
   }
 
   .qs-sobre {
-    padding: 60px var(--pad-x) 60px;
+    padding: 90px var(--pad-x) 60px;
   }
 
   .qs-sobre__content {
@@ -3119,14 +3123,22 @@ button.servicio__link {
     white-space: normal;
   }
 
+  .pr-hero {
+    height: auto; /* override desktop clamp height */
+  }
+
   .pr-hero__fondo {
+    position: relative; /* override desktop absolute */
+    bottom: auto;
+    left: auto;
     min-height: 380px;
     object-fit: fill;
+    height: auto;
   }
 
   .pr-hero__ilustracion {
     right: -52px;
-    top: 195px;
+    top: 195px; /* title ends ~229px, 60px gap */
     bottom: auto;
     width: clamp(100px, 30%, 170px);
     transform: none;
@@ -3204,7 +3216,7 @@ button.servicio__link {
   }
 
   .ct-verde__content {
-    padding: 100px 20px 65px;
+    padding: 100px 20px 90px;
   }
 
   .ct-verde__texto {
