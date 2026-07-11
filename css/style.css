@@ -3328,7 +3328,9 @@ button.servicio__link {
   }
 
   .pr-hero__ilustracion {
-    width: clamp(110px, 70%, 187px);
+    width: clamp(110px, 70%, 210px);
+    right: -79px;
+    top: 200px;
   }
 
   .ct-form__titulo {
@@ -3341,6 +3343,104 @@ button.servicio__link {
 }
 
 /* ============================================================
+   ESTELA DEL CURSOR
+   ============================================================ */
+#mv-cursor-trail {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ============================================================
+   FLOTACIÓN DE ILUSTRACIONES (vida en reposo)
+   Varias ilustraciones tienen su borde inferior calzado a propósito
+   con el fondo/ola de la sección (ver comentarios junto a cada clase
+   más arriba en este archivo). Esas NO se animan con translateY
+   -movería ese borde y abriría un hueco respecto al fondo, distinto
+   en cada breakpoint-. Se usa "squash & stretch" (scale en X e Y)
+   anclado abajo: transform-origin en el borde inferior es una
+   garantía matemática -no una convención- de que esa línea de
+   contacto con el fondo no se mueve, sin importar cuánto se escale
+   ni en qué eje. Por eso la animación puede ser bien notoria sin
+   arriesgar el calce, en ningún tamaño de pantalla.
+
+   Coherencia narrativa: los personajes (parados/sentados) "respiran"
+   con ese squash & stretch. La nave del hero es la única excepción
+   -no tiene un borde que deba calzar con un fondo (no usa clip-path
+   ni "corte" documentado como las demás)- así que a ella sí se le
+   da un vaivén real (translateY + leve rotación): flota como una
+   nave, no respira como un personaje.
+   ============================================================ */
+.hero__ilustracion img,
+.contacto__ilustracion img,
+.qs-hero__ilustracion img,
+.qs-equipo__alien,
+.qh-hero__ilustracion img,
+.pe-fondo__ilustracion img,
+.pr-hero__ilustracion img,
+.ct-hero__ilustracion img,
+.ct-form__ilustracion img {
+  transform-origin: 50% 100%;
+}
+
+@keyframes mv-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  25%      { transform: scale(0.96, 1.055); }
+  55%      { transform: scale(1.05, 0.945); }
+  80%      { transform: scale(0.98, 1.025); }
+}
+
+@keyframes mv-hover {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-11px) rotate(-1.6deg); }
+}
+
+.mv-breathing { animation: mv-breathe 6s ease-in-out infinite; }
+
+.hero__ilustracion img.mv-breathing     { animation: mv-hover 6.5s ease-in-out infinite; }
+.contacto__ilustracion img.mv-breathing { animation-duration: 5.2s; animation-delay: -1.3s; }
+.qs-hero__ilustracion img.mv-breathing  { animation-duration: 7s;   animation-delay: -2.1s; }
+.qs-equipo__alien.mv-breathing          { animation-duration: 6.2s; animation-delay: -0.6s; }
+.qh-hero__ilustracion img.mv-breathing  { animation-duration: 5.8s; animation-delay: -3s; }
+.pe-fondo__ilustracion img.mv-breathing { animation-duration: 6.6s; animation-delay: -1.8s; }
+.pr-hero__ilustracion img.mv-breathing  { animation-duration: 5.4s; animation-delay: -2.6s; }
+.ct-hero__ilustracion img.mv-breathing  { animation-duration: 6.8s; animation-delay: -0.9s; }
+.ct-form__ilustracion img.mv-breathing  { animation-duration: 5.6s; animation-delay: -1.5s; }
+
+/* ============================================================
+   ENTRADA AL HACER SCROLL (progressive enhancement)
+   Solo se ocultan si .js está presente en <html> (lo agrega script.js).
+   Sin JS, todo permanece visible como siempre.
+   La entrada es un "pop" con rebote (mismo scale/anclaje de arriba,
+   así que tampoco puede separar la ilustración de su fondo). Al
+   terminar, script.js reemplaza la clase por .mv-breathing para que
+   quede en el respiro continuo.
+   ============================================================ */
+.js .mv-reveal {
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.js .mv-reveal.is-visible {
+  opacity: 1;
+}
+
+@keyframes mv-pop-in {
+  0%   { transform: scale(0.45, 0.45); }
+  45%  { transform: scale(1.15, 0.85); }
+  65%  { transform: scale(0.92, 1.1); }
+  82%  { transform: scale(1.04, 0.97); }
+  100% { transform: scale(1, 1); }
+}
+
+.js .mv-reveal.mv-pop-in {
+  animation: mv-pop-in 0.85s ease-out both;
+}
+
+/* ============================================================
    REDUCED MOTION (accesibilidad)
    ============================================================ */
 @media (prefers-reduced-motion: reduce) {
@@ -3349,5 +3449,13 @@ button.servicio__link {
   }
   .carousel__track {
     transition: none !important;
+  }
+  .mv-breathing,
+  .js .mv-reveal.mv-pop-in {
+    animation: none !important;
+  }
+  .js .mv-reveal {
+    opacity: 1;
+    transition: none;
   }
 }

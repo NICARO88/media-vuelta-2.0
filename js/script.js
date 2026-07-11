@@ -1,3 +1,106 @@
+document.documentElement.classList.add('js');
+
+// ===== ESTELA DEL CURSOR (verde) =====
+(function initCursorTrail() {
+  const finePointer  = window.matchMedia('(pointer: fine)').matches;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!finePointer || reduceMotion) return;
+
+  const canvas = document.createElement('canvas');
+  canvas.id = 'mv-cursor-trail';
+  document.body.appendChild(canvas);
+  const ctx = canvas.getContext('2d');
+
+  let width, height;
+  function resize() {
+    width  = canvas.width  = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const points = [];
+  const MAX_POINTS = 18;
+
+  window.addEventListener('mousemove', e => {
+    points.push({ x: e.clientX, y: e.clientY, life: 1 });
+    if (points.length > MAX_POINTS) points.shift();
+  });
+
+  function strokeTrail(color, width) {
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    for (let i = 1; i < points.length; i++) {
+      const a = points[i - 1];
+      const b = points[i];
+      const t = b.life;
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.lineTo(b.x, b.y);
+      ctx.lineWidth = width * t;
+      ctx.strokeStyle = color(t);
+      ctx.stroke();
+    }
+  }
+
+  function loop() {
+    ctx.clearRect(0, 0, width, height);
+    for (let i = points.length - 1; i >= 0; i--) {
+      points[i].life -= 0.07;
+      if (points[i].life <= 0) points.splice(i, 1);
+    }
+    // halo blanco fino: da contraste cuando la línea cae sobre fondos del mismo verde
+    strokeTrail(t => `rgba(255, 255, 255, ${t * 0.35})`, 5.5);
+    // núcleo verde: línea condensada, no difusa
+    strokeTrail(t => `rgba(79, 201, 131, ${t * 0.85})`, 2.5);
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+
+// ===== REVELADO DE ILUSTRACIONES AL HACER SCROLL =====
+(function initRevealOnScroll() {
+  const revealEls = document.querySelectorAll([
+    '.hero__ilustracion img',
+    '.contacto__ilustracion img',
+    '.qs-hero__ilustracion img',
+    '.qs-equipo__alien',
+    '.qh-hero__ilustracion img',
+    '.pe-fondo__ilustracion img',
+    '.pr-hero__ilustracion img',
+    '.ct-hero__ilustracion img',
+    '.ct-form__ilustracion img',
+  ].join(','));
+  if (!revealEls.length) return;
+
+  revealEls.forEach(el => el.classList.add('mv-reveal'));
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!('IntersectionObserver' in window) || reduceMotion) {
+    revealEls.forEach(el => el.classList.add('is-visible'));
+    return;
+  }
+
+  function animateIn(el) {
+    el.classList.add('is-visible', 'mv-pop-in');
+    el.addEventListener('animationend', () => {
+      el.classList.remove('mv-pop-in');
+      el.classList.add('mv-breathing');
+    }, { once: true });
+  }
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateIn(entry.target);
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  revealEls.forEach(el => io.observe(el));
+})();
+
 // ===== MENÚ HAMBURGUESA =====
 const hamburger = document.querySelector('.navbar__hamburger');
 const navMenu   = document.querySelector('.navbar nav');
